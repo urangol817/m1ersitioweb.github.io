@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Costa Viva</title>
+
+    <!-- FUENTE -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <!-- BANNER -->
+
+    <header id="inicio">
+
+        <img src="banner.png" alt="Costa Viva" class="banner">
+
+    </header>
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">🏠 Inicio</a>
+
+        <a href="#cultura">🌴 Cultura</a>
+
+        <a href="#gastronomia">🍤 Gastronomía</a>
+
+        <a href="#musica">🎶 Música</a>
+
+        <a href="#video">🎥 Video</a>
+
+        <a href="#playas">🏖️ Playas</a>
+
+        <a href="#galeria">📸 Galería</a>
+
+        <a href="#contacto">📞 Contacto</a>
+
+    </nav>
+
+    <!-- TITULO -->
+
+    <section class="titulo" id="cultura">
+
+        <h1>Cultura Costeña Colombiana</h1>
+
+    </section>
+
+    <!-- DESCRIPCION -->
+
+    <section class="descripcion">
+
+        <p>
+
+            La cultura costeña colombiana representa la alegría,
+            la música, el sabor y las tradiciones del Caribe colombiano.
+
+            La región Caribe es reconocida por sus carnavales,
+            festivales, playas, gastronomía y música vallenata.
+
+        </p>
+
+    </section>
+
+    <!-- MUSICA -->
+
+    <section class="musica" id="musica">
+
+        <h2>🎵 Los Caminos de la Vida</h2>
+
+        <p>
+
+            "Los Caminos de la Vida" es una de las canciones más
+            representativas del vallenato colombiano.
+
+            Esta canción transmite un mensaje sobre las dificultades
+            de la vida y el amor hacia la familia.
+
+        </p>
+
+        <audio controls>
+
+            <source src="musica1.mp3" type="audio/mp3">
+
+        </audio>
+
+    </section>
+
+    <!-- VIDEO -->
+
+    <section class="video-section" id="video">
+
+        <h2>🎥 Video Cultural Costeño</h2>
+
+        <p>
+
+         Este video muestra una hermosa ciénaga ubicada en San Marcos, Sucre,
+         un lugar representativo de la región Caribe colombiana.
+
+         Sus paisajes naturales, aguas tranquilas y ambiente tropical reflejan
+         la belleza y riqueza cultural de la costa colombiana.
+
+         La ciénaga es parte importante de la vida de muchas comunidades,
+         donde la pesca, la naturaleza y las tradiciones hacen parte del día a día.
+
+        </p>
+
+        <!-- VIDEO -->
+
+        <video controls>
+
+            <source src="video1.mp4" type="video/mp4">
+
+        </video>
+
+        <!-- LIKE VIDEO -->
+
+        <div class="video-likes">
+
+            <button onclick="darLikeVideo()">
+
+                👍 Me gusta
+
+            </button>
+
+            <p id="contadorVideo">
+
+                250 personas les gusta este video
+
+            </p>
+
+        </div>
+
+        <!-- COMENTARIOS VIDEO -->
+
+        <div class="comentarios-video">
+
+            <h3>💬 Comentarios del Video</h3>
+
+            <textarea id="comentarioVideo"
+            placeholder="Escribe tu comentario del video..."></textarea>
+
+            <button onclick="agregarComentarioVideo()">
+
+                Enviar comentario
+
+            </button>
+
+            <div id="listaComentariosVideo"></div>
+
+        </div>
+
+    </section>
+
+    <!-- TARJETAS -->
+
+    <section class="cards">
+
+        <div class="card">
+
+            <img src="musicacard.jpg">
+
+            <h3>🎶 Música</h3>
+
+            <p>
+
+                El vallenato y la cumbia representan la identidad
+                cultural del Caribe colombiano.
+
+            </p>
+
+        </div>
+
+        <div class="card" id="gastronomia">
+
+            <img src="comida.jpg">
+
+            <h3>🍤 Gastronomía</h3>
+
+            <p>
+
+                La comida costeña destaca por sus sabores tropicales,
+                mariscos y platos típicos deliciosos.
+
+            </p>
+
+        </div>
+
+        <div class="card" id="playas">
+
+            <img src="playa.jpg">
+
+            <h3>🏝️ Turismo</h3>
+
+            <p>
+
+                Cartagena y Santa Marta poseen playas paradisíacas
+                reconocidas mundialmente.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+
+    <section class="galeria" id="galeria">
+
+        <h2>📸 Galería Costeña</h2>
+
+        <p class="texto-galeria">
+
+            La región Caribe colombiana está llena de colores,
+            alegría y tradiciones únicas.
+
+            En esta galería observamos playas tropicales,
+            paisajes hermosos y lugares turísticos
+            representativos de la costa colombiana.
+
+        </p>
+
+        <div class="contenedor-galeria">
+
+            <img id="imagenGaleria"
+            src="tolu.jpg">
+
+            <div class="botones-galeria">
+
+                <button onclick="anteriorImagen()">
+
+                    ⬅ Anterior
+
+                </button>
+
+                <button onclick="siguienteImagen()">
+
+                    Siguiente ➡
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section class="contacto" id="contacto">
+
+        <h2>📞 Contáctanos</h2>
+
+        <input type="text" placeholder="Tu nombre">
+
+        <input type="email" placeholder="Tu correo">
+
+        <textarea placeholder="Escribe tu mensaje"></textarea>
+
+        <button>Enviar</button>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        🌴 Costa Viva - Tradición, música y sabor del Caribe 🌊
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // VIDEO LIKES
+
+        let likesVideo = 250;
+
+        function darLikeVideo(){
+
+            likesVideo++;
+
+            document.getElementById("contadorVideo").innerHTML =
+            likesVideo + " personas les gusta este video";
+
+        }
+
+        // COMENTARIOS VIDEO
+
+        function agregarComentarioVideo(){
+
+            let texto =
+            document.getElementById("comentarioVideo").value;
+
+            if(texto.trim() !== ""){
+
+                let nuevoComentario =
+                document.createElement("p");
+
+                nuevoComentario.innerHTML =
+                "🌴 " + texto;
+
+                document.getElementById("listaComentariosVideo")
+                .appendChild(nuevoComentario);
+
+                document.getElementById("comentarioVideo").value = "";
+
+            }
+
+        }
+
+        // GALERIA
+
+        let imagenes = [
+
+        "imagen2.jpg",
+
+        "santamarta.jpg",
+
+        "barranquilla.jpg",
+
+        "tolu.jpg"
+
+        ];
+
+        let posicion = 0;
+
+        function mostrarImagen(){
+
+            document.getElementById("imagenGaleria").src =
+            imagenes[posicion];
+
+        }
+
+        function siguienteImagen(){
+
+            posicion++;
+
+            if(posicion >= imagenes.length){
+
+                posicion = 0;
+
+            }
+
+            mostrarImagen();
+
+        }
+
+        function anteriorImagen(){
+
+            posicion--;
+
+            if(posicion < 0){
+
+                posicion = imagenes.length - 1;
+
+            }
+
+            mostrarImagen();
+
+        }
+
+    </script>
+
+</body>
+
+</html>
